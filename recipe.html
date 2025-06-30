@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Recipe Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+  <div class="container">
+    <div class="recipe-title">Chocolate Cake</div>
+    <img src="chocolate_cake.jpg" alt="Chocolate Cake" class="recipe-img">
+    <div class="meta">
+      <span>Prep: 20 min</span>
+      <span>Cook: 30 min</span>
+      <span>Serves: 6</span>
+    </div>
+    <div class="section">
+      <div class="section-title">Ingredients</div>
+      <button class="btn" id="toggle-ingredients">Show Ingredients</button>
+      <ul class="ingredients-list hidden" id="ingredients-list">
+        <li>1 cup flour</li>
+        <li>1 cup sugar</li>
+        <li>1/2 cup cocoa powder</li>
+        <li>2 eggs</li>
+        <li>1/2 cup milk</li>
+        <li>1/2 cup butter</li>
+        <li>1 tsp baking powder</li>
+        <li>1/2 tsp salt</li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="section-title">Steps</div>
+      <div class="progress-bar"><div class="progress" id="progress"></div></div>
+      <ul class="steps-list" id="steps-list">
+        <li>Preheat oven to 350°F (175°C).</li>
+        <li>Mix dry ingredients together.</li>
+        <li>Beat in eggs, milk and melted butter.</li>
+        <li>Pour batter into greased pan.</li>
+        <li>Bake for 30 minutes.</li>
+        <li>Let cool, then serve.</li>
+      </ul>
+      <button class="btn" id="start-cooking">Start Cooking</button>
+    </div>
+    <div class="section">
+      <button class="btn" id="print-btn">Print Recipe</button>
+    </div>
+    <div class="section" id="timer-section" style="text-align:center; color:#007bff; font-weight:700;"></div>
+  </div>
+  <script src="recipe.js"></script>
+</body>
+</html>
